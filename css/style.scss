@@ -1,0 +1,152 @@
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 10px;
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #555;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  transition: all 0.25s;
+
+  &:focus,
+  &:hover {
+    background-color: #666;
+  }
+}
+
+.bg-img {
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  &__inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 20px;
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Shadows Into Light", cursive;
+
+    &--left {
+      text-align: left;
+    }
+  }
+
+  &__body {
+    text-align: center;
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+  }
+}
+
+.price-table {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    font-size: 1.25rem;
+  }
+
+  &__name {
+    margin-right: 1em;
+    font-weight: normal;
+    position: relative;
+    margin-left: 1.25em;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      left: -1em;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 4em;
+    font-size: 1.25rem;
+    transition: all 0.25s;
+    position: relative;
+    color: #555;
+
+    &::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+
+    &--facebook {
+      &::before {
+        content: "\f09a";
+      }
+    }
+
+    &--twitter {
+      &::before {
+        content: "\f099";
+      }
+    }
+
+    &--instagram {
+      &::before {
+        content: "\f16d";
+      }
+    }
+  }
+}
+
+.space-md {
+  margin-bottom: 32px;
+}
